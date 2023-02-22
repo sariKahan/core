@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ekvch8oCALstkyMi6sXcN8kV/wXILsHtgxPaFI16j0NBtgy2vSG9v2qTpg/UI7rNCU/d/sNuxNsotsFHKw8+bA==",
+  "dgSpecHash": "or0LiI2TkXrqpWF9oKnY0zlY46wX+jK5hPr/Wj/l9P2zUWiA+ioEdawE8QwIjukSpiG7Z9OM6j8QAUS4e9vfVA==",
   "success": true,
-  "projectFilePath": "D:\\שרי\\יד\\core\\שעורי בית\\שעור1 בניית שרת בסיסי\\שעור1 בניית שרת בסיסי.csproj",
+  "projectFilePath": "D:\\שרי\\יד\\core\\שעורי בית\\JobProject\\JobProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell Vostro\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.0\\microsoft.aspnetcore.openapi.7.0.0.nupkg.sha512",
     "C:\\Users\\Dell Vostro\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

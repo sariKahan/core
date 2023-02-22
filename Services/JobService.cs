@@ -1,30 +1,31 @@
-using שעור1_בניית_שרת_בסיסי.Models;
+using JobProject.Models;
 using System.Collections.Generic;
 using System.Linq;
+using JobProject.Interfaces;
 
-namespace שעור1_בניית_שרת_בסיסי.Services
+namespace JobProject.Services
 {
-    public static class JobService
+    public class JobService : JobInterface
     {
-        private static List<Job> ListJobs = new List<Job>
+        private List<Job> ListJobs = new List<Job>
         {
             new Job{Id = 1,Name = "hwCore",IsDone = false},
             new Job{Id = 2,Name = "testC#",IsDone = false}
         };
 
-        public static List<Job> GetAll() => ListJobs;
-        public static Job Get(int id)
+        public List<Job> GetAll() => ListJobs;
+        public Job Get(int id)
         {
             return ListJobs.FirstOrDefault(t => t.Id == id);
         }
 
-        public static void Add(Job Job)
+        public void Add(Job Job)
         {
             Job.Id = ListJobs.Max(p => p.Id) + 1;
             ListJobs.Add(Job);
         }
 
-        public static bool Update(int id, Job newJob)
+        public bool Update(int id, Job newJob)
         {
             if (newJob.Id != id)
                 return false;
@@ -35,7 +36,7 @@ namespace שעור1_בניית_שרת_בסיסי.Services
             return true;
         }
 
-        public static bool Delete(int id)
+        public bool Delete(int id)
         {
             Job Job = ListJobs.FirstOrDefault(t => t.Id == id);
             if (Job == null)

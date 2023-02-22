@@ -465,11 +465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\שרי\\יד\\core\\שעורי בית\\שעור1 בניית שרת בסיסי\\שעור1 בניית שרת בסיסי.csproj",
-      "projectName": "שעור1 בניית שרת בסיסי",
-      "projectPath": "D:\\שרי\\יד\\core\\שעורי בית\\שעור1 בניית שרת בסיסי\\שעור1 בניית שרת בסיסי.csproj",
+      "projectUniqueName": "D:\\שרי\\יד\\core\\שעורי בית\\JobProject\\JobProject.csproj",
+      "projectName": "JobProject",
+      "projectPath": "D:\\שרי\\יד\\core\\שעורי בית\\JobProject\\JobProject.csproj",
       "packagesPath": "C:\\Users\\Dell Vostro\\.nuget\\packages\\",
-      "outputPath": "D:\\שרי\\יד\\core\\שעורי בית\\שעור1 בניית שרת בסיסי\\obj\\",
+      "outputPath": "D:\\שרי\\יד\\core\\שעורי בית\\JobProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dell Vostro\\AppData\\Roaming\\NuGet\\NuGet.Config",

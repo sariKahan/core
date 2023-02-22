@@ -1,6 +1,6 @@
 using System;
 
-namespace שעור1_בניית_שרת_בסיסי.Models;
+namespace JobProject.Models;
 
 public class Job
 {
