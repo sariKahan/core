@@ -1,10 +1,10 @@
-using System;
 
-namespace JobProject.Models;
+namespace TasksProject.Models;
 
-public class Job
+public class task
 {
     public int Id { get; set; }
+    public int UserId { get; set; }
 
     public String? Name { get; set; }
 
