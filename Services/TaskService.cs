@@ -1,11 +1,7 @@
 using TasksProject.Models;
 using TasksProject.Interfaces;
 using System.Text.Json;
-using Microsoft.AspNetCore.Authorization;
 using System.IdentityModel.Tokens.Jwt;
-using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
-using TasksProject.Services;
 
 namespace TasksProject.Services
 {
@@ -19,7 +15,6 @@ namespace TasksProject.Services
         {
             this.webHost = webHost;
             this.filePath = Path.Combine(webHost.ContentRootPath, "Data", "task.json");
-            //this.filePath = webHost.ContentRootPath+@"/Data/Pizza.json";
             using (var jsonFile = File.OpenText(filePath))
             {
                 ListTasks = JsonSerializer.Deserialize<List<task>>(jsonFile.ReadToEnd(),
@@ -33,23 +28,26 @@ namespace TasksProject.Services
         {
             File.WriteAllText(filePath, JsonSerializer.Serialize(ListTasks));
         }
-        public List<task> GetAll() => ListTasks;
+        public List<task> GetAll() => ListTasks!;
         public task Get(int id)
         {
-            return ListTasks.FirstOrDefault(t => t.Id == id);
+            return ListTasks!.FirstOrDefault(t => t.Id == id)!;
         }
 
         public void Add(task task)
         {
-            task.Id = ListTasks.Max(p => p.Id) + 1;
-            ListTasks.Add(task);
+            task.Id = ListTasks!.Max(p => p.Id) + 1;
+            ListTasks!.Add(task);
             saveToFile();
         }
 
         public bool Update(int id, task newTask)
         {
            
-            task Task = ListTasks.FirstOrDefault(t => t.Id == id);
+            task Task = Get(id);
+            if(Task == null ){
+                return false;
+            }
             Task.Name = newTask.Name;
             Task.IsDone = newTask.IsDone;
             saveToFile();
@@ -58,10 +56,10 @@ namespace TasksProject.Services
 
         public bool Delete(int id)
         {
-            task Task = ListTasks.FirstOrDefault(t => t.Id == id);
+            task Task = ListTasks!.FirstOrDefault(t => t.Id == id)!;
             if (Task == null)
                 return false;
-            ListTasks.Remove(Task);
+            ListTasks?.Remove(Task);
             saveToFile();
             return true;
         }

@@ -53,15 +53,13 @@ public class TasksProject : ControllerBase
     [Authorize(Policy = "User")]
     public ActionResult Put(int id, task Task)
     {
-        // return Job.Name;
-        var t = task.Get(id);
-        // return j;
-        if (t == null || t.UserId != TaskService.getId(Request.Headers.Authorization))
+        task t = task.Get(id);
+        if (t == null || t.UserId != TaskService.getId(Request.Headers.Authorization!))
         {
             return BadRequest();
         }
-
-        task.Update(id, t);
+        if(!task.Update(id, Task))
+            return NotFound();
         return NoContent();
     }
 
@@ -69,7 +67,7 @@ public class TasksProject : ControllerBase
     [Authorize(Policy = "User")]
     public ActionResult Delete(int id)
     {
-        if (task.GetAll().FirstOrDefault(t => t.Id == id).UserId != TaskService.getId(Request.Headers.Authorization))
+        if (task.GetAll().FirstOrDefault(t => t.Id == id)?.UserId == TaskService.getId(Request.Headers.Authorization!))
             if (!task.Delete(id))
                 return NotFound();
         return NoContent();

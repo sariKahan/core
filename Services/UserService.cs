@@ -13,7 +13,6 @@ namespace TasksProject.Services
         {
             this.webHost = webHost;
             this.filePath = Path.Combine(webHost.ContentRootPath, "Data", "user.json");
-            //this.filePath = webHost.ContentRootPath+@"/Data/Pizza.json";
             using (var jsonFile = File.OpenText(filePath))
             {
                 ListUsers = JsonSerializer.Deserialize<List<User>>(jsonFile.ReadToEnd(),
@@ -29,16 +28,16 @@ namespace TasksProject.Services
         {
             File.WriteAllText(filePath, JsonSerializer.Serialize(ListUsers));
         }
-        public List<User> GetAll() => ListUsers;
+        public List<User> GetAll() => ListUsers!;
         public User Get(int id)
         {
-            return ListUsers.FirstOrDefault(t => t.Id == id);
+            return ListUsers!.FirstOrDefault(t => t.Id == id)!;
         }
 
         public void Add(User user)
         {
-            user.Id = ListUsers.Max(p => p.Id) + 1;
-            ListUsers.Add(user);
+            user.Id = ListUsers!.Max(p => p.Id) + 1;
+            ListUsers!.Add(user);
             saveToFile();
         }
 
@@ -46,7 +45,6 @@ namespace TasksProject.Services
         {
             if (newUser.Id != id)
                 return false;
-            
             User? user = ListUsers?.FirstOrDefault(t => t.Id == id);
             if(user == null)
                 return false;
@@ -67,7 +65,6 @@ namespace TasksProject.Services
         }
               public static int isExist(string name, string password)
         {
-            // ListJobs.Add(new Job(){Id=0,Name="oiuh"});
             string filePath = Path.Combine("Data", "user.json");
             List<User>? ListUsers;
             using (var jsonFile = System.IO.File.OpenText(filePath))
@@ -78,8 +75,7 @@ namespace TasksProject.Services
                     PropertyNameCaseInsensitive = true
                 });
             }
-        //ListUsers.Add(new User(){Id=09876543});
-          User user = ListUsers.FirstOrDefault(u=> u.Name==name && u.Password == password);
+          User user = ListUsers!.FirstOrDefault(u=> u.Name==name && u.Password == password)!;
             if(user != null)
                 return user.Id;
             return -1;

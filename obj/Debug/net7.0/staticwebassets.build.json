@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "01butc0JTfVQatG76Hbz3/hoHloHjvE16JT0GDN3UGw=",
+  "Hash": "IgzfbGeA3R0KQPSTl/sVHPQ3U7shPXEbQosgdiQgYL0=",
   "Source": "TasksProject",
   "BasePath": "_content/TasksProject",
   "Mode": "Default",
@@ -32,23 +32,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\html\\display.html",
-      "SourceId": "TasksProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\",
-      "BasePath": "_content/TasksProject",
-      "RelativePath": "html/display.html",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\html\\display.html"
     },
     {
       "Identity": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\html\\kjhg.html",
@@ -85,6 +68,40 @@
       "OriginalItemSpec": "wwwroot\\html\\login.html"
     },
     {
+      "Identity": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\html\\task.html",
+      "SourceId": "TasksProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\",
+      "BasePath": "_content/TasksProject",
+      "RelativePath": "html/task.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\html\\task.html"
+    },
+    {
+      "Identity": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\html\\user.html",
+      "SourceId": "TasksProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\",
+      "BasePath": "_content/TasksProject",
+      "RelativePath": "html/user.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\html\\user.html"
+    },
+    {
       "Identity": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\index.html",
       "SourceId": "TasksProject",
       "SourceType": "Discovered",
@@ -102,12 +119,12 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\js\\display.js",
+      "Identity": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\js\\login.js",
       "SourceId": "TasksProject",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\",
       "BasePath": "_content/TasksProject",
-      "RelativePath": "js/display.js",
+      "RelativePath": "js/login.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,24 +133,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\display.js"
-    },
-    {
-      "Identity": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\js\\Login.js",
-      "SourceId": "TasksProject",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\",
-      "BasePath": "_content/TasksProject",
-      "RelativePath": "js/Login.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\Login.js"
+      "OriginalItemSpec": "wwwroot\\js\\login.js"
     },
     {
       "Identity": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\js\\site.js",
@@ -151,6 +151,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\js\\task.js",
+      "SourceId": "TasksProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\",
+      "BasePath": "_content/TasksProject",
+      "RelativePath": "js/task.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\task.js"
+    },
+    {
+      "Identity": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\js\\user.js",
+      "SourceId": "TasksProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\",
+      "BasePath": "_content/TasksProject",
+      "RelativePath": "js/user.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\user.js"
     }
   ]
 }

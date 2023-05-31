@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\html\\display.html",
-      "PackagePath": "staticwebassets\\html\\display.html"
-    },
-    {
       "Id": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\html\\kjhg.html",
       "PackagePath": "staticwebassets\\html\\kjhg.html"
     },
@@ -17,20 +13,32 @@
       "PackagePath": "staticwebassets\\html\\login.html"
     },
     {
+      "Id": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\html\\task.html",
+      "PackagePath": "staticwebassets\\html\\task.html"
+    },
+    {
+      "Id": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\html\\user.html",
+      "PackagePath": "staticwebassets\\html\\user.html"
+    },
+    {
       "Id": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\js\\Login.js",
-      "PackagePath": "staticwebassets\\js\\Login.js"
-    },
-    {
-      "Id": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\js\\display.js",
-      "PackagePath": "staticwebassets\\js\\display.js"
+      "Id": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\js\\login.js",
+      "PackagePath": "staticwebassets\\js\\login.js"
     },
     {
       "Id": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\js\\task.js",
+      "PackagePath": "staticwebassets\\js\\task.js"
+    },
+    {
+      "Id": "D:\\שרי\\יד\\core\\שעורי בית\\TasksProject\\wwwroot\\js\\user.js",
+      "PackagePath": "staticwebassets\\js\\user.js"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.TasksProject.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -35,7 +35,6 @@ function addTask() {
             'Content-Type': 'application/json',
             'Authorization': "Bearer " + token
         },
-
         body: JSON.stringify(item)
     })
         .then(response => (response.json()))
@@ -50,8 +49,8 @@ function deleteTask(id) {
     fetch(`${uri}/${id}`, {
         method: 'DELETE',
         headers: {
-            // 'Accept': 'application/json',
-            // 'Content-Type': 'application/json',
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
             'Authorization': 'Bearer ' + token,
         },
     })
@@ -74,13 +73,14 @@ function updateTask() {
         id: parseInt(id, 10),
         name: document.getElementById('edit-name').value.trim(),
         isDone: document.getElementById('edit-IsDone').checked
-    };
+};
 
     fetch(`${uri}/${id}`, {
         method: 'PUT',
         headers: {
             'Accept': 'application/json',
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + token
         },
         body: JSON.stringify(item)
     })

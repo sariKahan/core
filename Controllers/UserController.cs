@@ -21,13 +21,14 @@ public class UserController : ControllerBase
     [Route("[action]")]
 public ActionResult<String> Login([FromBody] User user)
     {
+        bool flag = false;
         var claims = new List<Claim> { };
         var dt = DateTime.Now;
-        
         if (user.Name == "Dina"
         && user.Password == $"W{dt.Year}#{dt.Day}!")
         {
             claims.Add(new Claim("type", "Admin"));
+            flag = true;
         }
         else
         {
@@ -37,11 +38,11 @@ public ActionResult<String> Login([FromBody] User user)
                 return NotFound();
             }
         claims.Add(new Claim("type", "User"));
-       claims.Add(new Claim("id",userId.ToString()));
+        claims.Add(new Claim("id",userId.ToString()));
         }
 
         var token = TokenService.GetToken(claims);
-        return new OkObjectResult(TokenService.WriteToken(token));
+        return new OkObjectResult(new {token = TokenService.WriteToken(token),isAdmin = flag}) ;
     }
     [HttpGet]
     [Authorize(Policy = "Admin")]
